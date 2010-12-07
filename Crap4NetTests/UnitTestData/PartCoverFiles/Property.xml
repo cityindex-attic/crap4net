@@ -1,0 +1,8 @@
+<PartCoverReport date="2009-09-22T13:21:59.2854010+03:00">
+ <File id="1" url="C:\Users\Lior\Documents\Visual Studio 2008\Projects\Crap4Net\DummyProject\Class1.cs" />
+ <Assembly id="1" name="DummyProject" module="C:\Users\Lior\Documents\Visual Studio 2008\Projects\Crap4Net\DummyTests\bin\Debug\DummyProject.dll" domain="Dependency finder domain" domainIdx="1" />
+ <Type asmref="1" name="dummyProject.Class1" flags="0">
+  <Method name="get_SomeProperty" sig="object  ()" bodysize="24" flags="0" iflags="0" />
+  <Method name="set_SomeProperty" sig="void  (object)" bodysize="10" flags="0" iflags="0" />
+ </Type>
+</PartCoverReport>

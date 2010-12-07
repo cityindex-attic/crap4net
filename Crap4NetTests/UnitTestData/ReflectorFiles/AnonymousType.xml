@@ -1,0 +1,13 @@
+<Report>
+  <Metric Name="Type">
+    <Type Name="&lt;&gt;f__AnonymousType0&lt;&lt;Method&gt;j__TPar,&lt;Complexity&gt;j__TPar&gt;" CodeSize="258" WeightedCyclomaticComplexity="8" Fields="2" Methods="6" Properties="2" Events="0" NestedTypes="0" Attributes="2" DepthInTree="1" />
+  </Metric>
+  <Metric Name="Method">
+    <Method Name="&lt;&gt;f__AnonymousType0&lt;&lt;Method&gt;j__TPar,&lt;Complexity&gt;j__TPar&gt;..ctor(&lt;Method&gt;j__TPar, &lt;Complexity&gt;j__TPar)" CodeSize="21" CyclomaticComplexity="1" Instructions="9" Locals="0" MaxStack="8" ExceptionHandlers="0" Throw="0" NewObj="0" Ret="1" CastClass="0" />
+    <Method Name="&lt;&gt;f__AnonymousType0&lt;&lt;Method&gt;j__TPar,&lt;Complexity&gt;j__TPar&gt;.get_Method() : &lt;Method&gt;j__TPar" CodeSize="11" CyclomaticComplexity="1" Instructions="6" Locals="1" MaxStack="1" ExceptionHandlers="0" Throw="0" NewObj="0" Ret="1" CastClass="0" />
+    <Method Name="&lt;&gt;f__AnonymousType0&lt;&lt;Method&gt;j__TPar,&lt;Complexity&gt;j__TPar&gt;.get_Complexity() : &lt;Complexity&gt;j__TPar" CodeSize="11" CyclomaticComplexity="1" Instructions="6" Locals="1" MaxStack="1" ExceptionHandlers="0" Throw="0" NewObj="0" Ret="1" CastClass="0" />
+    <Method Name="&lt;&gt;f__AnonymousType0&lt;&lt;Method&gt;j__TPar,&lt;Complexity&gt;j__TPar&gt;.ToString() : String" CodeSize="89" CyclomaticComplexity="1" Instructions="32" Locals="2" MaxStack="2" ExceptionHandlers="0" Throw="0" NewObj="1" Ret="1" CastClass="0" />
+    <Method Name="&lt;&gt;f__AnonymousType0&lt;&lt;Method&gt;j__TPar,&lt;Complexity&gt;j__TPar&gt;.Equals(Object) : Boolean" CodeSize="64" CyclomaticComplexity="3" Instructions="24" Locals="2" MaxStack="3" ExceptionHandlers="0" Throw="0" NewObj="0" Ret="1" CastClass="0" />
+    <Method Name="&lt;&gt;f__AnonymousType0&lt;&lt;Method&gt;j__TPar,&lt;Complexity&gt;j__TPar&gt;.GetHashCode() : Int32" CodeSize="62" CyclomaticComplexity="1" Instructions="25" Locals="2" MaxStack="3" ExceptionHandlers="0" Throw="0" NewObj="0" Ret="1" CastClass="0" />
+  </Metric>
+</Report>

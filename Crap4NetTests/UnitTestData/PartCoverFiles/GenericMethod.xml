@@ -1,0 +1,11 @@
+<PartCoverReport date="2009-09-22T11:29:10.7440060+03:00">
+ <File id="1" url="C:\Users\Lior\Documents\Visual Studio 2008\Projects\Crap4Net\DummyProject\Class1.cs" />
+ <Assembly id="1" name="DummyProject" module="C:\Users\Lior\Documents\Visual Studio 2008\Projects\Crap4Net\DummyTests\bin\Debug\DummyProject.dll" domain="Dependency finder domain" domainIdx="1" />
+ <Type asmref="1" name="dummyProject.Class1" flags="0">
+  <Method name="GenericMethod" sig=" &lt;1&gt; ()" bodysize="27" flags="0" iflags="0">
+   <pt visit="2" pos="0" len="1" fid="1" sl="48" sc="9" el="48" ec="10" />
+   <pt visit="2" pos="1" len="12" fid="1" sl="49" sc="13" el="49" ec="31" />
+   <pt visit="2" pos="13" len="2" fid="1" sl="50" sc="9" el="50" ec="10" />
+  </Method>
+ </Type>
+</PartCoverReport>

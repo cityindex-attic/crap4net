@@ -1,0 +1,44 @@
+<PartCoverReport date="2009-09-22T13:21:59.2854010+03:00">
+ <File id="1" url="C:\Users\Lior\Documents\Visual Studio 2008\Projects\Crap4Net\DummyProject\Class1.cs" />
+ <Assembly id="1" name="DummyProject" module="C:\Users\Lior\Documents\Visual Studio 2008\Projects\Crap4Net\DummyTests\bin\Debug\DummyProject.dll" domain="Dependency finder domain" domainIdx="1" />
+ <Type asmref="1" name="dummyProject.class2" flags="0">
+  <Method name=".ctor" sig="void  ()" bodysize="8" flags="0" iflags="0" />
+ </Type>
+ <Type asmref="1" name="dummyProject.Class1" flags="0">
+  <Method name="method2" sig="void  ()" bodysize="14" flags="0" iflags="0" />
+  <Method name=".cctor" sig="void  ()" bodysize="3" flags="0" iflags="0">
+   <pt visit="1" pos="0" len="1" fid="1" sl="70" sc="9" el="70" ec="10" />
+   <pt visit="1" pos="1" len="1" fid="1" sl="71" sc="9" el="71" ec="10" />
+  </Method>
+  <Method name="method2" sig="int  (int)" bodysize="21" flags="0" iflags="0" />
+  <Method name="method2" sig="double  (double)" bodysize="29" flags="0" iflags="0" />
+  <Method name="method2" sig="void  (float)" bodysize="10" flags="0" iflags="0" />
+  <Method name="GenericMethod" sig=" &lt;1&gt; ()" bodysize="27" flags="0" iflags="0">
+   <pt visit="2" pos="0" len="1" fid="1" sl="53" sc="9" el="53" ec="10" />
+   <pt visit="2" pos="1" len="12" fid="1" sl="54" sc="13" el="54" ec="31" />
+   <pt visit="2" pos="13" len="2" fid="1" sl="55" sc="9" el="55" ec="10" />
+  </Method>
+  <Method name="get_SomeProperty" sig="object  ()" bodysize="24" flags="0" iflags="0" />
+  <Method name=".ctor" sig="void  ()" bodysize="18" flags="0" iflags="0">
+   <pt visit="2" pos="0" len="7" fid="1" sl="15" sc="9" el="15" ec="27" />
+   <pt visit="2" pos="7" len="7" fid="1" sl="16" sc="9" el="16" ec="24" />
+   <pt visit="2" pos="14" len="1" fid="1" sl="17" sc="9" el="17" ec="10" />
+   <pt visit="2" pos="15" len="2" fid="1" sl="19" sc="9" el="19" ec="10" />
+  </Method>
+  <Method name="set_SomeProperty" sig="void  (object)" bodysize="10" flags="0" iflags="0" />
+  <Method name="method1" sig="void  ()" bodysize="55" flags="0" iflags="0">
+   <pt visit="1" pos="0" len="1" fid="1" sl="21" sc="9" el="21" ec="10" />
+   <pt visit="1" pos="1" len="10" fid="1" sl="22" sc="13" el="22" ec="22" />
+   <pt visit="1" pos="11" len="3" />
+   <pt visit="0" pos="14" len="1" fid="1" sl="23" sc="13" el="23" ec="14" />
+   <pt visit="0" pos="15" len="11" fid="1" sl="24" sc="17" el="24" ec="46" />
+   <pt visit="0" pos="26" len="1" fid="1" sl="25" sc="13" el="25" ec="14" />
+   <pt visit="0" pos="27" len="2" />
+   <pt visit="1" pos="29" len="1" fid="1" sl="27" sc="13" el="27" ec="14" />
+   <pt visit="1" pos="30" len="11" fid="1" sl="28" sc="17" el="28" ec="46" />
+   <pt visit="1" pos="41" len="1" fid="1" sl="29" sc="13" el="29" ec="14" />
+   <pt visit="1" pos="42" len="1" fid="1" sl="31" sc="9" el="31" ec="10" />
+  </Method>
+  <Method name="staticMethod" sig="void  ()" bodysize="3" flags="0" iflags="0" />
+ </Type>
+</PartCoverReport>

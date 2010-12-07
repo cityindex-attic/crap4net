@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rows>
+  <Row>
+    <CCMReport>ccmReport.xml</CCMReport>
+    <coverageReport>PartCoverResult.xml</coverageReport>
+    <ExpectedCrapReport>ExpectedCrapReport.xml</ExpectedCrapReport>
+  </Row>
+  <Row>
+    <CCMReport>ccmReport.xml</CCMReport>
+    <coverageReport>ReflectorCCReport.xml</coverageReport>
+    <ExpectedCrapReport>ExpectedCrapReport.xml</ExpectedCrapReport>
+  </Row>
+</Rows>

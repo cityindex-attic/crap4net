@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CrapReport>
+  <Section Name="Methods">
+    <Method Type="Class1" Name=".ctor" Crap="17"/>
+    <Method Type="Class1" Name="method1" Crap="13.2"/>
+    <Method Type="Class2" Name="method2" Crap="1"/>
+  </Section>
+</CrapReport>

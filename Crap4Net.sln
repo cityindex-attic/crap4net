@@ -1,0 +1,110 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyProject", "DummyProject\DummyProject.csproj", "{371C759B-FF0F-455B-948E-DB754BD2655D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyTests", "DummyTests\DummyTests.csproj", "{66BAA253-D4F8-4DA8-9023-1EC781251F25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A3E8FE9B-1B71-4597-8AFD-2E40A6384300}"
+	ProjectSection(SolutionItems) = preProject
+		Build.xml = Build.xml
+		Crap4Net1.vsmdi = Crap4Net1.vsmdi
+		Crap4Net2.vsmdi = Crap4Net2.vsmdi
+		Important Notes.txt = Important Notes.txt
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		DummyTests\PartCover.config = DummyTests\PartCover.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crap4Net", "Crap4Net\Crap4Net.csproj", "{6595C5EB-49B5-45AF-BFD8-ED77DF166462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crap4NetUnitTests", "Crap4NetTests\Crap4NetUnitTests.csproj", "{D417855F-ECF4-4D44-B7C9-06F75AE64B5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crap4Net.AcceptanceTests", "Crap4Net.AcceptanceTests\Crap4Net.AcceptanceTests.csproj", "{C561DCB8-4CD0-4ECD-9449-1C4577836D91}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99} = {E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462} = {6595C5EB-49B5-45AF-BFD8-ED77DF166462}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crap4Net-Console", "Crap4Net-Console\Crap4Net-Console.csproj", "{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462} = {6595C5EB-49B5-45AF-BFD8-ED77DF166462}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Crap4Net2.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{371C759B-FF0F-455B-948E-DB754BD2655D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{371C759B-FF0F-455B-948E-DB754BD2655D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{371C759B-FF0F-455B-948E-DB754BD2655D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{371C759B-FF0F-455B-948E-DB754BD2655D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{371C759B-FF0F-455B-948E-DB754BD2655D}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{371C759B-FF0F-455B-948E-DB754BD2655D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{371C759B-FF0F-455B-948E-DB754BD2655D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{371C759B-FF0F-455B-948E-DB754BD2655D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{371C759B-FF0F-455B-948E-DB754BD2655D}.Release|Win32.ActiveCfg = Release|Any CPU
+		{66BAA253-D4F8-4DA8-9023-1EC781251F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BAA253-D4F8-4DA8-9023-1EC781251F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BAA253-D4F8-4DA8-9023-1EC781251F25}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{66BAA253-D4F8-4DA8-9023-1EC781251F25}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{66BAA253-D4F8-4DA8-9023-1EC781251F25}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{66BAA253-D4F8-4DA8-9023-1EC781251F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BAA253-D4F8-4DA8-9023-1EC781251F25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BAA253-D4F8-4DA8-9023-1EC781251F25}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{66BAA253-D4F8-4DA8-9023-1EC781251F25}.Release|Win32.ActiveCfg = Release|Any CPU
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6595C5EB-49B5-45AF-BFD8-ED77DF166462}.Release|Win32.ActiveCfg = Release|Any CPU
+		{D417855F-ECF4-4D44-B7C9-06F75AE64B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D417855F-ECF4-4D44-B7C9-06F75AE64B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D417855F-ECF4-4D44-B7C9-06F75AE64B5C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D417855F-ECF4-4D44-B7C9-06F75AE64B5C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D417855F-ECF4-4D44-B7C9-06F75AE64B5C}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{D417855F-ECF4-4D44-B7C9-06F75AE64B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D417855F-ECF4-4D44-B7C9-06F75AE64B5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D417855F-ECF4-4D44-B7C9-06F75AE64B5C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D417855F-ECF4-4D44-B7C9-06F75AE64B5C}.Release|Win32.ActiveCfg = Release|Any CPU
+		{C561DCB8-4CD0-4ECD-9449-1C4577836D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C561DCB8-4CD0-4ECD-9449-1C4577836D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C561DCB8-4CD0-4ECD-9449-1C4577836D91}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C561DCB8-4CD0-4ECD-9449-1C4577836D91}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C561DCB8-4CD0-4ECD-9449-1C4577836D91}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{C561DCB8-4CD0-4ECD-9449-1C4577836D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C561DCB8-4CD0-4ECD-9449-1C4577836D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C561DCB8-4CD0-4ECD-9449-1C4577836D91}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C561DCB8-4CD0-4ECD-9449-1C4577836D91}.Release|Win32.ActiveCfg = Release|Any CPU
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E97A37D5-0EC6-4E61-BB45-77BA39A4EB99}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

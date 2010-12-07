@@ -1,0 +1,13 @@
+<Report>
+  <Metric Name="Type">
+    <Type Name="&lt;Module&gt;" CodeSize="0" WeightedCyclomaticComplexity="0" Fields="0" Methods="0" Properties="0" Events="0" NestedTypes="0" Attributes="0" DepthInTree="0" />
+    <Type Name="dummyProject.class2" CodeSize="7" WeightedCyclomaticComplexity="1" Fields="0" Methods="1" Properties="0" Events="0" NestedTypes="0" Attributes="0" DepthInTree="1" />
+    <Type Name="dummyProject.Class1" CodeSize="148" WeightedCyclomaticComplexity="12" Fields="2" Methods="11" Properties="1" Events="0" NestedTypes="0" Attributes="0" DepthInTree="1" />
+  </Metric>
+  <Metric Name="Method">
+    <Method Name="dummyProject.Class1.staticMethod() : Void" CodeSize="2" CyclomaticComplexity="1" Instructions="2" Locals="0" MaxStack="8" ExceptionHandlers="0" Throw="0" NewObj="0" Ret="1" CastClass="0" />
+  </Metric>
+  <Metric Name="Module">
+    <Module Name="DummyProject.dll" Size="4608" Types="3" Abstracts="0" EfferentCouplings="0" AfferentCouplings="1" Abstractness="0" Instability="0" Distance="0.5" />
+  </Metric>
+</Report>

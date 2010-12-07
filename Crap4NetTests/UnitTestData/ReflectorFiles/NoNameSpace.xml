@@ -1,0 +1,13 @@
+<Report>
+  <Metric Name="Type">
+    <Type Name="&lt;Module&gt;" CodeSize="0" WeightedCyclomaticComplexity="0" Fields="0" Methods="0" Properties="0" Events="0" NestedTypes="0" Attributes="0" DepthInTree="0" />
+    <Type Name="ClassWithNoNameSpace" CodeSize="20" WeightedCyclomaticComplexity="2" Fields="0" Methods="2" Properties="0" Events="0" NestedTypes="0" Attributes="0" DepthInTree="1" />
+  </Metric>
+  <Metric Name="Method">
+    <Method Name="ClassWithNoNameSpace.StameMethod() : Void" CodeSize="13" CyclomaticComplexity="1" Instructions="5" Locals="0" MaxStack="8" ExceptionHandlers="0" Throw="0" NewObj="0" Ret="1" CastClass="0" />
+    <Method Name="ClassWithNoNameSpace..ctor()" CodeSize="7" CyclomaticComplexity="1" Instructions="3" Locals="0" MaxStack="8" ExceptionHandlers="0" Throw="0" NewObj="0" Ret="1" CastClass="0" />
+  </Metric>
+  <Metric Name="Module">
+    <Module Name="DummyProject.dll" Size="5120" Types="4" Abstracts="0" EfferentCouplings="0" AfferentCouplings="1" Abstractness="0" Instability="0" Distance="0.5" />
+  </Metric>
+</Report>

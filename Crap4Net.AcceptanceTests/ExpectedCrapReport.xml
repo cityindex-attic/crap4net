@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <Result>
+    <Method>"Class1..ctor"</Method>
+    <CRAP>1</CRAP>
+  </Result>
+  <Result>
+    <Method>"Class1.method1"</Method>
+    <CRAP>2.2</CRAP>
+  </Result>
+  <Result>
+    <Method>"Class1.method2"</Method>
+    <CRAP>2</CRAP>
+  </Result>
+</Data>

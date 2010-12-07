@@ -1,0 +1,69 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup >
+    <TypeMockLocation>3rdParties\Typemock</TypeMockLocation>
+    <ReflectorLocation>3rdParties\Reflector</ReflectorLocation>
+    <MSTestLocation>"C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE"</MSTestLocation>
+  </PropertyGroup>
+  
+  <Import Project ="$(TypeMockLocation)\TypeMock.MSBuild.Tasks"/>
+
+  <Target Name="Nightly">
+    <CallTarget Targets="DebugAndTest;ReleaseAndTest" />
+  </Target>
+  <Target Name="DebugAndTest">
+    <CallTarget Targets="BuildDebug"></CallTarget>
+    <CallTarget Targets="UnitTests;AcceptanceTests"></CallTarget>
+    <CallTarget Targets="TestReports"></CallTarget>
+  </Target>
+
+  <Target Name="ReleaseAndTest">
+    <CallTarget Targets="BuildRelease;TestsRelease"></CallTarget>
+  </Target>
+  
+  <Target Name="BuildDebug">
+    <MSBuild Projects="Crap4Net.sln" Properties="Configuration=Debug"/>
+  </Target>
+
+  <Target Name="BuildRelease">
+    <MSBuild Projects="Crap4Net.sln" Properties="Configuration=Release" />
+  </Target>
+
+  <Target Name ="UnitTests">
+    <TypeMockRegister Company ="TypeMock" License="QC0A-A`DI-7A1E-1EED-F2CD" AutoDeploy="True"/>
+    <TypeMockStart/>
+    <Exec Command="$(MSTestLocation)\mstest /testcontainer:bin\Debug\Crap4NetTests.dll /runconfig:LocalTestRun.testrunconfig /resultsfile:TestResults\UnitTests.trx"></Exec>
+    <CallTarget Targets="Undeploy" />
+    <OnError ExecuteTargets="Undeploy;TestReports" />
+  </Target>
+
+  <Target Name="Undeploy">
+    <TypeMockStop Undeploy="true"></TypeMockStop>
+  </Target>
+
+  <Target Name ="AcceptanceTests">
+    <!--<TypeMockRegister Company ="TypeMock" License="QC0A-A`DI-7A1E-1EED-F2CD" AutoDeploy="True"/>
+    <TypeMockStart/>
+    <Exec Command="$(MSTestLocation)\mstest /testcontainer:bin\Debug\CTesting.AcceptanceTests.dll /runconfig:DebugRun.testrunconfig"></Exec>
+    <TypeMockStop Undeploy="true"></TypeMockStop>-->
+  </Target>
+
+  <Target Name ="TestsRelease">
+    <!--<TypeMockRegister Company ="TypeMock" License="QC0A-A`DI-7A1E-1EED-F2CD" AutoDeploy="True"/>
+    <TypeMockStart/>
+    <Exec Command="$(MSTestLocation)\mstest /testcontainer:bin\Debug\Crap4NetTests.dll"></Exec>
+    <Exec Command="$(MSTestLocation)\mstest /testcontainer:bin\Release\CTesting.AcceptanceTests.dll /runconfig:ReleaseRun.testrunconfig"></Exec>
+    <TypeMockStop Undeploy="true"></TypeMockStop>-->
+  </Target>
+
+  <Target Name="TestReports">
+    <Exec Command="3rdParties\trx2html\trx2html TestResults\UnitTests.trx"></Exec>
+    <CallTarget Targets="ReflectorReport"/>
+  </Target>
+
+  <Target Name="ReflectorReport">
+    <Exec command="$(ReflectorLocation)\Reflector.exe /Run:Reflector.CodeMetrics /Assembly:Crap4Net\bin\Debug\Crap4Net.dll /OutputPath:TestResults/ReflectorReport.xml"></Exec>
+  </Target>
+
+
+</Project>

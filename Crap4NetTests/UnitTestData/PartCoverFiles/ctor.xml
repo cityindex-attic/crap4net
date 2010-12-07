@@ -1,0 +1,12 @@
+<PartCoverReport date="2009-09-22T11:29:10.7440060+03:00">
+ <File id="1" url="C:\Users\Lior\Documents\Visual Studio 2008\Projects\Crap4Net\DummyProject\Class1.cs" />
+ <Assembly id="1" name="DummyProject" module="C:\Users\Lior\Documents\Visual Studio 2008\Projects\Crap4Net\DummyTests\bin\Debug\DummyProject.dll" domain="Dependency finder domain" domainIdx="1" />
+ <Type asmref="1" name="dummyProject.Class1" flags="0">
+  <Method name=".ctor" sig="void  ()" bodysize="18" flags="0" iflags="0">
+   <pt visit="2" pos="0" len="7" fid="1" sl="10" sc="9" el="10" ec="27" />
+   <pt visit="2" pos="7" len="7" fid="1" sl="11" sc="9" el="11" ec="24" />
+   <pt visit="2" pos="14" len="1" fid="1" sl="12" sc="9" el="12" ec="10" />
+   <pt visit="2" pos="15" len="2" fid="1" sl="14" sc="9" el="14" ec="10" />
+  </Method>
+ </Type>
+</PartCoverReport>

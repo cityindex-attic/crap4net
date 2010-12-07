@@ -1,0 +1,28 @@
+//Running from command line
+mstest /testcontainer:Crap4NetTests.dll
+
+//Show the duration of the tests (good for putting some constarins on specific tests. make sure that performance has not been damaged by more than X%)
+mstest /testcontainer:Crap4NetTests.dll /detail:duration
+
+//running with specific configuration
+mstest /runconfig:..\..\..\LocalTestRun.testrunconfig /testcontainer:Crap4NetTests.dll
+
+
+//Running refelctor Metrics from command line:
+
+IMPORTANT - 
+	1) need to have setup the metric plugin
+	2) the gui will open and auto close when finished.
+	3) must have permission to write the output file - or you get a cryptic exception!!!
+	
+"C:\Users\Lior\AppData\Roaming\Mutant Design\TestDriven.NET 2.0\Reflector\Reflector.exe" /Run:Reflector.CodeMetrics /Assembly:"DummyProject.dll" /OutputPath:"ReflectorReport.xml"
+
+
+RUNNING PART COVER
+1) use corflags toforce partcover to run 32 bit mode!!!!
+2) if running with mstest must need noisolation flag otherise no actual data is collected.
+3) best course of action is to use the supplied PartCover.config file as followed:
+(from the folder with the dummytest project)
+	"c:\Program Files (x86)\Gubka Bob\PartCover .NET 2.3\partcover" --settings ..\..\PartCover.config
+	
+4) and there is a GUI fopr reveiwing results and running them....

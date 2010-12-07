@@ -1,0 +1,40 @@
+<PartCoverReport date="2009-06-22T14:03:29.5466545+03:00">
+ <File id="2" url="C:\Documents and Settings\zivl\Desktop\Lior\dummyNet\dummyProject\dummyProject\Class1.cs" />
+ <File id="1" url="C:\Documents and Settings\zivl\Desktop\Lior\dummyNet\dummyProject\dummyTests\Class1Test.cs" />
+ <Assembly id="1" name="dummyTests" module="C:\Documents and Settings\zivl\Desktop\Lior\dummyNet\dummyProject\dummyTests\bin\Debug\dummyTests.dll" domain="EnumerateDomain" domainIdx="1" />
+ <Assembly id="3" name="dummyProject" module="C:\Documents and Settings\zivl\Desktop\Lior\dummyNet\dummyProject\dummytests\bin\debug\dummyProject.dll" domain="Dependency finder domain" domainIdx="1" />
+ <Type asmref="1" name="dummyTests.Class1Test" flags="0">
+  <Method name="method1Test" sig="void  ()" bodysize="27" flags="0" iflags="0">
+   <pt visit="1" pos="0" len="1" fid="1" sl="52" sc="9" el="52" ec="10" />
+   <pt visit="1" pos="1" len="6" fid="1" sl="53" sc="13" el="53" ec="42" />
+   <pt visit="1" pos="7" len="7" fid="1" sl="54" sc="13" el="54" ec="30" />
+   <pt visit="1" pos="14" len="1" fid="1" sl="55" sc="9" el="55" ec="10" />
+  </Method>
+  <Method name=".ctor" sig="void  ()" bodysize="8" flags="0" iflags="0">
+   <pt visit="1" pos="0" len="6" />
+   <pt visit="1" pos="6" len="1" />
+  </Method>
+ </Type>
+ <Type asmref="3" name="dummyProject.Class1" flags="0">
+  <Method name=".ctor" sig="void  ()" bodysize="18" flags="0" iflags="0">
+   <pt visit="1" pos="0" len="7" fid="2" sl="10" sc="9" el="10" ec="27" />
+   <pt visit="1" pos="7" len="7" fid="2" sl="11" sc="9" el="11" ec="24" />
+   <pt visit="1" pos="14" len="1" fid="2" sl="12" sc="9" el="12" ec="10" />
+   <pt visit="1" pos="15" len="2" fid="2" sl="14" sc="9" el="14" ec="10" />
+  </Method>
+  <Method name="method1" sig="void  ()" bodysize="55" flags="0" iflags="0">
+   <pt visit="1" pos="0" len="1" fid="2" sl="16" sc="9" el="16" ec="10" />
+   <pt visit="1" pos="1" len="10" fid="2" sl="17" sc="13" el="17" ec="22" />
+   <pt visit="1" pos="11" len="3" />
+   <pt visit="0" pos="14" len="1" fid="2" sl="18" sc="13" el="18" ec="14" />
+   <pt visit="0" pos="15" len="11" fid="2" sl="19" sc="17" el="19" ec="46" />
+   <pt visit="0" pos="26" len="1" fid="2" sl="20" sc="13" el="20" ec="14" />
+   <pt visit="0" pos="27" len="2" />
+   <pt visit="1" pos="29" len="1" fid="2" sl="22" sc="13" el="22" ec="14" />
+   <pt visit="1" pos="30" len="11" fid="2" sl="23" sc="17" el="23" ec="46" />
+   <pt visit="1" pos="41" len="1" fid="2" sl="24" sc="13" el="24" ec="14" />
+   <pt visit="1" pos="42" len="1" fid="2" sl="26" sc="9" el="26" ec="10" />
+  </Method>
+  <Method name="method2" sig="void  ()" bodysize="14" flags="0" iflags="0" />
+ </Type>
+</PartCoverReport>

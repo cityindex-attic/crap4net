@@ -1,0 +1,38 @@
+<ccm>
+  <metric>
+    <complexity>2</complexity>
+    <unit>Class1::method1</unit>
+    <classification>simple, without much risk</classification>
+    <file>\Class1.cs</file>
+  </metric>
+  <metric>
+    <complexity>1</complexity>
+    <unit>Class1::Class1</unit>
+    <classification>simple, without much risk</classification>
+    <file>\Class1.cs</file>
+  </metric>
+  <metric>
+    <complexity>1</complexity>
+    <unit>Class1::method2</unit>
+    <classification>simple, without much risk</classification>
+    <file>\Class1.cs</file>
+  </metric>
+  <metric>
+    <complexity>1</complexity>
+    <unit>Class1::method2</unit>
+    <classification>simple, without much risk</classification>
+    <file>\Class1.cs</file>
+  </metric>
+  <metric>
+    <complexity>1</complexity>
+    <unit>Class1::method2</unit>
+    <classification>simple, without much risk</classification>
+    <file>\Class1.cs</file>
+  </metric>
+  <metric>
+    <complexity>1</complexity>
+    <unit>Class1::method2</unit>
+    <classification>simple, without much risk</classification>
+    <file>\Class1.cs</file>
+  </metric>
+</ccm>
