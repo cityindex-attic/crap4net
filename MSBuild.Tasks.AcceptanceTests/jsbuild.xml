@@ -1,0 +1,11 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="MsBuild.Tasks.CalculateCrap4JSMetrics"
+      AssemblyFile="MsBuild.Tasks.dll"/>
+
+  <Target Name="CalculateCrap4JSMetrics">
+    <ItemGroup>
+      <JSFiles Include="*.js" />
+    </ItemGroup>
+    <CalculateCrap4JSMetrics Files="@(JSFiles)" />
+  </Target>
+</Project>
