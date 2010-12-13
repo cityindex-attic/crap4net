@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6595C5EB-49B5-45AF-BFD8-ED77DF166462}</ProjectGuid>
+    <ProjectGuid>{AADCA677-033A-4D05-BEE9-43E50D942684}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Crap4Net</RootNamespace>
-    <AssemblyName>Crap4Net</AssemblyName>
+    <RootNamespace>Crap4Net.UnitTests</RootNamespace>
+    <AssemblyName>Crap4Net.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,22 +25,20 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\</OutputPath>
+    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualStudio.Coverage.Analysis, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86">
+    <Reference Include="nunit.framework, Version=2.5.7.10213, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\3rdParties\Visual Studio\Microsoft.VisualStudio.Coverage.Analysis.dll</HintPath>
+      <HintPath>..\3rdParties\NUnit\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -51,30 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoverageParsers\BaseCoverageParser.cs" />
-    <Compile Include="Entities\CCDataEntry.cs" />
-    <Compile Include="CCParsers\CCMParser.cs" />
-    <Compile Include="Entities\CoverageDataEntry.cs" />
-    <Compile Include="CoverageParsers\VsXmlParser.cs" />
-    <Compile Include="CrapAnalyzer.cs" />
-    <Compile Include="CrapCalculator.cs" />
-    <Compile Include="Entities\CrapDataEntry.cs" />
-    <Compile Include="Formatters\Crap4JXmlFormatter.cs" />
-    <Compile Include="Formatters\IFormatter.cs" />
-    <Compile Include="CCParsers\ICCParser.cs" />
-    <Compile Include="CoverageParsers\ICoverageParser.cs" />
-    <Compile Include="Entities\CombinedDataEntry.cs" />
-    <Compile Include="Entities\MethodSignature.cs" />
-    <Compile Include="CoverageParsers\PartCoverageParser.cs" />
+    <Compile Include="EntitiesTests\CCDataEntryTest.cs" />
+    <Compile Include="EntitiesTests\CoverageDataEntryTests.cs" />
+    <Compile Include="EntitiesTests\CrapDataEntryTest.cs" />
+    <Compile Include="EntitiesTests\MethodSignatureTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CCParsers\ReflectorParser.cs" />
-    <Compile Include="CoverageParsers\VSCoverageParser.cs" />
-    <Compile Include="Formatters\XmlFormatter.cs" />
-    <Compile Include="SignatureParser.cs" />
+    <Compile Include="SignatureParserTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="xsl\CrapDetails.xslt" />
-    <Content Include="xsl\Report.xslt" />
+    <ProjectReference Include="..\Crap4Net\Crap4Net.csproj">
+      <Project>{6595C5EB-49B5-45AF-BFD8-ED77DF166462}</Project>
+      <Name>Crap4Net</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

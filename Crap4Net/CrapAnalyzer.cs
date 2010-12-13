@@ -25,7 +25,11 @@ namespace Crap4Net
             foreach (var item in combinedData)
             {
                 var crapValue = CrapCalculator.CalculateCrap(item.CyclomaticComplexity, item.CoverageData);
-                var entry = new CrapDataEntry(item.Method.TypeName, item.Method.MethodName, crapValue);
+                var entry = new CrapDataEntry(item.Method.TypeName, 
+                                item.Method.MethodName, 
+                                crapValue,
+                                item.CoverageData,
+                                item.CyclomaticComplexity);
                 results.Add(entry);
             }
             return results;

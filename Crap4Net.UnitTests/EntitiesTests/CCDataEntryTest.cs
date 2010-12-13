@@ -1,18 +1,16 @@
 ﻿using Crap4Net;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-namespace Crap4NetTests
+using NUnit.Framework;
+
+namespace Crap4Net.Entitiestests
 {
-    
-    
-    [TestClass()]
+    [TestFixture]
     public class CCDataEntryTest
     {
-        const string DONT_CARE = "Dont Care";
         const string VALID_TYPE_NAME = "SomeClass";
         const string VALID_METHOD_NAME = "SomeMethod";
 
-        [TestMethod()]
+        [Test()]
         public void Equals_IdenticalValues_ReturnTrue()
         {
             CCDataEntry target1 = new CCDataEntry("SomeClass", "SomeMethod", 1);
@@ -20,7 +18,7 @@ namespace Crap4NetTests
             Assert.IsTrue(target1.Equals(target2));
         }
 
-        [TestMethod()]
+        [Test()]
         public void Equals_DifferentTypeName_ReturnFalse()
         {
             CCDataEntry target1 = new CCDataEntry("SomeClass", VALID_METHOD_NAME, 1);
@@ -28,7 +26,7 @@ namespace Crap4NetTests
             Assert.IsFalse(target1.Equals(target2));
         }
 
-        [TestMethod()]
+        [Test()]
         public void Equals_DifferentMethod_ReturnFalse()
         {
             CCDataEntry target1 = new CCDataEntry(VALID_TYPE_NAME, "SomeMethod", 1);
@@ -36,7 +34,7 @@ namespace Crap4NetTests
             Assert.IsFalse(target1.Equals(target2));
         }
 
-        [TestMethod()]
+        [Test()]
         public void Equals_DifferentCCValue_ReturnFalse()
         {
             CCDataEntry target1 = new CCDataEntry(VALID_TYPE_NAME, VALID_METHOD_NAME, 1);
@@ -44,7 +42,7 @@ namespace Crap4NetTests
             Assert.IsFalse(target1.Equals(target2));
         }
 
-        [TestMethod()]
+        [Test()]
         public void Equals_NullValue_ReturnFalse()
         {
             CCDataEntry target = new CCDataEntry(VALID_TYPE_NAME, VALID_METHOD_NAME, 1);
@@ -52,7 +50,7 @@ namespace Crap4NetTests
             Assert.IsFalse(actual);
         }
 
-        [TestMethod()]
+        [Test()]
         public void ctor_LegalValue_InitializeFields()
         {
             CCDataEntry target = new CCDataEntry(VALID_TYPE_NAME, VALID_METHOD_NAME, 5);
@@ -62,7 +60,7 @@ namespace Crap4NetTests
 
         }
 
-        [TestMethod()]
+        [Test()]
         [ExpectedException(typeof(ArgumentException))]
         public void ctor_NegativeCCValue_ThrowsException()
         {

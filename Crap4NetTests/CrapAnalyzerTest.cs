@@ -38,16 +38,16 @@ namespace Crap4NetTests
                         new CoverageDataEntry("MyClass","Method3",50)
                     };
             Isolate.WhenCalled(() => fakeCoverageParser.Data).WillReturn(fakeCovData);
-            
+
             CrapAnalyzer.CCParser = fakeCCParser;
             CrapAnalyzer.CoverageParser = fakeCoverageParser;
-            
+
             var actual = CrapAnalyzer.CreateCrapReport("", "");
 
             Assert.AreEqual(3, actual.Count);
-            Assert.IsTrue(actual.Contains(new CrapDataEntry("MyClass", "Method1", 1.34)));
-            Assert.IsTrue(actual.Contains(new CrapDataEntry("MyClass", "Method2", 1.22)));
-            Assert.IsTrue(actual.Contains(new CrapDataEntry("MyClass", "Method3", 1.12)));
+            Assert.IsTrue(actual.Contains(new CrapDataEntry("MyClass", "Method1", 1.34, 0, 0)));
+            Assert.IsTrue(actual.Contains(new CrapDataEntry("MyClass", "Method2", 1.22, 0, 0)));
+            Assert.IsTrue(actual.Contains(new CrapDataEntry("MyClass", "Method3", 1.12, 0, 0)));
         }
 
         [TestMethod]
@@ -127,6 +127,6 @@ namespace Crap4NetTests
         // 2) covergae doesnt include entry that exists in cc
         // 3) for entry that exists in both create the right combination
 
-        
+
     }
 }

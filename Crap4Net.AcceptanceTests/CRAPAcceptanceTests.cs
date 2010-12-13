@@ -65,9 +65,9 @@ namespace Crap4NetTests
                 @"AcceptnaceTestData\ccmReport.xml");
 
             Assert.AreEqual(3, actual.Count);
-            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", ".ctor", 1)));
-            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", "method1", 2.20)));
-            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", "method2", 2)));
+            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", ".ctor", 1, 0, 0)));
+            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", "method1", 2.20, 0, 0)));
+            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", "method2", 2, 0, 0)));
         }
 
         [TestMethod]
@@ -81,9 +81,9 @@ namespace Crap4NetTests
                 @"AcceptnaceTestData\ReflectorCCReport.xml");
 
             Assert.AreEqual(3, actual.Count);
-            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", ".ctor", 1)));
-            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", "method1", 2.20)));
-            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", "method2", 2)));
+            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", ".ctor", 1, 0, 0)));
+            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", "method1", 2.20, 0, 0)));
+            Assert.IsTrue(actual.Contains(new CrapDataEntry("Class1", "method2", 2, 0, 0)));
         }
         #endregion
 

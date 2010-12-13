@@ -41,9 +41,9 @@ namespace Crap4NetTests
         #endregion
 
         private IList<CrapDataEntry> _Data = new List<CrapDataEntry>(){
-            new CrapDataEntry("Class1", ".ctor", 17),
-            new CrapDataEntry("Class1", "method1", 13.2),
-            new CrapDataEntry("Class2", "method2", 1)};
+            new CrapDataEntry("Class1", ".ctor", 17, 0, 0),
+            new CrapDataEntry("Class1", "method1", 13.2, 0, 0),
+            new CrapDataEntry("Class2", "method2", 1, 0, 0)};
 
         [TestMethod()]
         public void FormatReport_GivenValidData_BuildProperXml()

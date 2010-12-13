@@ -44,6 +44,8 @@
     <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -58,24 +60,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CCDataEntryTest.cs" />
-    <Compile Include="CCMParserTest.cs" />
-    <Compile Include="CombinedDataEntryTest.cs" />
-    <Compile Include="Crap4jXmlFormatterTest.cs" />
-    <Compile Include="CrapDataEntryTest.cs" />
-    <Compile Include="VSCoverageParserTest.cs" />
-    <Compile Include="CoverageDataEntryTests.cs" />
-    <Compile Include="MethodSignatureTest.cs" />
-    <Compile Include="ReflectorParserTest.cs" />
-    <Compile Include="PartCoverParserTest.cs" />
+    <Compile Include="CCParsersTests\CCMParserTest.cs" />
+    <Compile Include="EntitiesTests\CombinedDataEntryTest.cs" />
+    <Compile Include="FormatterTests\Crap4jXmlFormatterTest.cs" />
+    <Compile Include="CoverageParsersTests\VSCoverageParserTest.cs" />
+    <Compile Include="CCParsersTests\ReflectorParserTest.cs" />
+    <Compile Include="CoverageParsersTests\PartCoverParserTest.cs" />
     <Compile Include="CrapAnalyzerTest.cs" />
     <Compile Include="CrapCalculatorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XmlFormatterTest.cs" />
+    <Compile Include="FormatterTests\XmlFormatterTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AuthoringTests.txt" />
     <Content Include="UnitTestData\ccmReport.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnitTestData\ReflectorFiles\ComplexNameSpace.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="UnitTestData\ReflectorFiles\crap.xml">

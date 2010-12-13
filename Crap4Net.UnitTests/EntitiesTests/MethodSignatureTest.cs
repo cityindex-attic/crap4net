@@ -1,9 +1,9 @@
 ﻿using Crap4Net;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-namespace Crap4NetTests
+using NUnit.Framework;
+namespace Crap4Net.Entitiestests
 {
-    [TestClass()]
+    [TestFixture]
     public class MethodSignatureTest
     {
 
@@ -40,7 +40,7 @@ namespace Crap4NetTests
         const string SOME_TYPE_NAME = "SomeType";
         const string SOME_METHOD_NAME = "SomeMethod";
 
-        [TestMethod]
+        [Test]
         public void ctor_LegalParameters_InitializeFieldsWithValues()
         {
             var target = new MethodSignature(SOME_TYPE_NAME, SOME_METHOD_NAME);
@@ -49,21 +49,21 @@ namespace Crap4NetTests
             Assert.AreEqual(SOME_METHOD_NAME, target.MethodName);
         }
 
-        [TestMethod]
+        [Test]
         [ExpectedException (typeof(ArgumentException))]
         public void ctor_NullTypeName_ThrowsException()
         {
             new MethodSignature(null, SOME_METHOD_NAME);
         }
 
-        [TestMethod]
+        [Test]
         [ExpectedException(typeof(ArgumentException))]
         public void ctor_NullMethodName_ThrowsException()
         {
             new MethodSignature(SOME_TYPE_NAME, null);
         }
 
-        [TestMethod()]
+        [Test]
         public void Equals_IdenticalValues_ReturnsTrue()
         {
             var target1 = new MethodSignature(SOME_TYPE_NAME, SOME_METHOD_NAME);
@@ -74,7 +74,7 @@ namespace Crap4NetTests
             Assert.IsTrue(actual);
         }
 
-        [TestMethod()]
+        [Test]
         public void Equals_DifferentMethodName_ReturnsFalse()
         {
             var target1 = new MethodSignature(SOME_TYPE_NAME, SOME_METHOD_NAME);
@@ -85,7 +85,7 @@ namespace Crap4NetTests
             Assert.IsFalse(actual);
         }
 
-        [TestMethod()]
+        [Test]
         public void Equals_DifferentTypeName_ReturnsFalse()
         {
             var target1 = new MethodSignature(SOME_TYPE_NAME, SOME_METHOD_NAME + "a");
@@ -96,7 +96,7 @@ namespace Crap4NetTests
             Assert.IsFalse(actual);
         }
 
-        [TestMethod()]
+        [Test]
         public void Equals_NullObject_ReturnsFalse()
         {
             var target = new MethodSignature(SOME_TYPE_NAME, SOME_METHOD_NAME + "a");

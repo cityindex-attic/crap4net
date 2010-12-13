@@ -278,12 +278,12 @@ namespace Crap4Net.Formatters
             methodElement.AppendChild(crap);
             
             var complexity= xmlDoc.CreateElement("complexity");
-            var complexityValue = xmlDoc.CreateTextNode("0");
+            var complexityValue = xmlDoc.CreateTextNode(method.CC.ToString());
             complexity.AppendChild(complexityValue);
             methodElement.AppendChild(complexity);
 
             var coverage = xmlDoc.CreateElement("coverage");
-            var coverageValue = xmlDoc.CreateTextNode("0");
+            var coverageValue = xmlDoc.CreateTextNode(method.Coverage.ToString());
             coverage.AppendChild(coverageValue);
             methodElement.AppendChild(coverage);
 
