@@ -5,6 +5,7 @@ using System.Linq;
 using System.Xml.Linq;
 using Crap4Net;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Crap4Net.CoverageParsers;
 
 namespace Crap4NetTests
 {

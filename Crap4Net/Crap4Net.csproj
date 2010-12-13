@@ -51,23 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseCoverageParser.cs" />
+    <Compile Include="CoverageParsers\BaseCoverageParser.cs" />
     <Compile Include="CCDataEntry.cs" />
     <Compile Include="CCMParser.cs" />
     <Compile Include="CoverageDataEntry.cs" />
+    <Compile Include="CoverageParsers\VsXmlParser.cs" />
     <Compile Include="CrapAnalyzer.cs" />
     <Compile Include="CrapCalculator.cs" />
     <Compile Include="CrapDataEntry.cs" />
     <Compile Include="Formatters\Crap4JXmlFormatter.cs" />
     <Compile Include="Formatters\IFormatter.cs" />
     <Compile Include="ICCParser.cs" />
-    <Compile Include="ICoverageParser.cs" />
+    <Compile Include="CoverageParsers\ICoverageParser.cs" />
     <Compile Include="CombinedDataEntry.cs" />
     <Compile Include="MethodSignature.cs" />
-    <Compile Include="PartCoverageParser.cs" />
+    <Compile Include="CoverageParsers\PartCoverageParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectorParser.cs" />
-    <Compile Include="VSCoverageParser.cs" />
+    <Compile Include="CoverageParsers\VSCoverageParser.cs" />
     <Compile Include="Formatters\XmlFormatter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

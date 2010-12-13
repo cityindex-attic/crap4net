@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Crap4Net.CoverageParsers;
 
 namespace Crap4Net
 {

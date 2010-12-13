@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System;
 using System.IO;
 using System.Collections;
+using Crap4Net.CoverageParsers;
 
 namespace Crap4NetTests
 {

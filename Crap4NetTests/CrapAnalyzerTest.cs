@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System;
 using TypeMock.ArrangeActAssert;
+using Crap4Net.CoverageParsers;
 
 namespace Crap4NetTests
 {

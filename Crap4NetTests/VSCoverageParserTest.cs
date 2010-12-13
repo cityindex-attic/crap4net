@@ -1,6 +1,7 @@
 ﻿using System;
 using Crap4Net;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Crap4Net.CoverageParsers;
 
 namespace Crap4NetTests
 {

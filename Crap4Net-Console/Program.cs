@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using Crap4Net;
+using Crap4Net.CoverageParsers;
 
 namespace Crap4Net_Console
 {
