@@ -30,7 +30,7 @@ namespace Crap4Net.UnitTests
 <methodCount>3</methodCount>
 <crapMethodCount>2</crapMethodCount>
 <crapMethodPercent>66.7</crapMethodPercent>
-<crapLoad>28.8</crapLoad>
+<crapLoad>29</crapLoad>
 <crapThreshold>15</crapThreshold>
 <globalAverage>-1.0</globalAverage>
 <globalCraploadAverage>-1.0</globalCraploadAverage>
@@ -62,7 +62,7 @@ namespace Crap4Net.UnitTests
 <crap>20.11</crap>
 <complexity>14</complexity>
 <coverage>27</coverage>
-<crapLoad>14.4</crapLoad>
+<crapLoad>14</crapLoad>
 ";
 
             var formatter = new Crap4JXmlFormatter();

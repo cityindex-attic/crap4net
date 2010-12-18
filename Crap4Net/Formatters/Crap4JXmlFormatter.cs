@@ -140,7 +140,7 @@ namespace Crap4Net.Formatters
             stats.AppendChild(elem);
 
             elem = xmlDoc.CreateElement("crapLoad");
-            value = xmlDoc.CreateTextNode(crapStatsEntry.CalculateTotalCrapLoad().ToString("0.0"));
+            value = xmlDoc.CreateTextNode(crapStatsEntry.CalculateTotalCrapLoad().ToString("0"));
             elem.AppendChild(value);
             stats.AppendChild(elem);
 
@@ -289,7 +289,7 @@ namespace Crap4Net.Formatters
             methodElement.AppendChild(coverage);
 
             var crapLoad = xmlDoc.CreateElement("crapLoad");
-            var crapLoadValue = xmlDoc.CreateTextNode(method.CalculateCrapLoad().ToString("0.0"));
+            var crapLoadValue = xmlDoc.CreateTextNode(method.CalculateCrapLoad().ToString("0"));
             crapLoad.AppendChild(crapLoadValue);
             methodElement.AppendChild(crapLoad);
 
