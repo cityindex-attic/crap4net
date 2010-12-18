@@ -11,6 +11,53 @@ namespace Crap4Net.Entitiestests
         const string VALID_TYPE_NAME = "SomeClass";
         const string VALID_METHOD_NAME = "SomeMethod";
 
+        /// <summary>
+        /// Q: What is the CRAPload number?
+        /// A: Crap load represents the "minimum" amount of work that could be done 
+        /// to get below the crap threshold of 30 for a method. The summary Crapload 
+        /// number is for the whole project and is just the sum of crap load for all methods. 
+        /// The idea is that this gives you a floor value for the amount of work to get rid of crap. 
+        /// Usually, the amount of work will be greater.
+        ///
+        /// Examining this in more detail, to lower the Crap score, there are two options: r
+        /// educe cyclomatic complexity in a method, or write tests that cover 
+        /// more of the paths in the method. In the case of the Crapload number, 
+        /// we take the simplest possible restructuring of code, which is to 
+        /// refactor it into methods that are half the size of the previous method, 
+        /// say using the Extract Method refactoring. For example, I have a method 
+        /// of complexity 60. if I refactor by extracting half the method into a new method, 
+        /// then I would have two methods of complexity 30.
+        ///
+        /// Obviously, this blind refactoring is a pretty poor way to "fix" a system, and in reality, 
+        /// some other, more appropriate, restructuring of the system would be the action to take. 
+        /// In lieu of being able to determine that programmatically, we can at least compute t
+        /// he minimum amount of work that could possibly be done to remove Crap from the system.
+        /// 
+        /// Crap load for a method is calculated as follows:
+        ///
+        /// public int getCrapLoad(float crapThreshold) {
+        ///   int crapLoad = 0;
+        ///   if (getCrap() >= crapThreshold) {
+        ///     int complexity = getComplexity();
+        ///     float coverage = getCoverage();
+        ///     crapLoad += complexity * (1.0 - coverage);
+        ///     crapLoad += complexity / crapThreshold;
+        ///   }
+        /// return crapLoad;
+        /// }
+        /// 
+        /// So, interpreting that, if the CRAP score for a method is above the threshold, 15, 
+        /// then for every point of uncovered complexity, add 1 for a test to cover that path. 
+        /// Then for every bit of complexity over the threshold, figure out the number of 
+        /// extract methods dividing in half that need to be done to get below the threshold.
+        /// </summary>
+        [Test]
+        public void CrapLoadCalculatedCorrectly()
+        {
+            CrapDataEntry target1 = new CrapDataEntry("SomeClass", "SomeMethod", 40.51, 27, 9);
+            Assert.AreEqual(9.2666666666666675d, target1.CalculateCrapLoad());
+        }
+
         [Test]
         public void Equals_IdenticalValues_ReturnTrue()
         {
