@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{6595C5EB-49B5-45AF-BFD8-ED77DF166462}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -51,8 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constants.cs" />
     <Compile Include="CoverageParsers\BaseCoverageParser.cs" />
+    <Compile Include="CoverageParsers\CoberturaParser.cs" />
     <Compile Include="Entities\CCDataEntry.cs" />
     <Compile Include="CCParsers\CCMParser.cs" />
     <Compile Include="Entities\CoverageDataEntry.cs" />
@@ -60,7 +60,6 @@
     <Compile Include="CrapAnalyzer.cs" />
     <Compile Include="CrapCalculator.cs" />
     <Compile Include="Entities\CrapDataEntry.cs" />
-    <Compile Include="Entities\CrapStatsEntry.cs" />
     <Compile Include="Formatters\Crap4JXmlFormatter.cs" />
     <Compile Include="Formatters\IFormatter.cs" />
     <Compile Include="CCParsers\ICCParser.cs" />

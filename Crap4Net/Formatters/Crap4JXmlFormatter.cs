@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml;
-using Crap4Net.Entities;
 
 namespace Crap4Net.Formatters
 {
@@ -19,7 +18,7 @@ namespace Crap4Net.Formatters
 
             AppendHeadersInfoElement(xmlDoc,root);
 
-            var stats = CreateStats(xmlDoc, new CrapStatsEntry(data, Constants.CrapThreshold));
+            var stats = CreateStats(xmlDoc);
             root.AppendChild(stats);
             var methods = CreateMethods(xmlDoc,data);
             root.AppendChild(methods);
@@ -90,7 +89,7 @@ namespace Crap4Net.Formatters
             root.AppendChild(libClassPaths);
         }
 
-        private XmlElement CreateStats(XmlDocument xmlDoc, CrapStatsEntry crapStatsEntry)
+        private XmlElement CreateStats(XmlDocument xmlDoc)
         {
             XmlElement stats = xmlDoc.CreateElement("stats");
 
@@ -100,7 +99,7 @@ namespace Crap4Net.Formatters
             stats.AppendChild(elem);
 
             elem = xmlDoc.CreateElement("totalCrap");
-            value = xmlDoc.CreateTextNode(crapStatsEntry.CalculateTotalCrap().ToString("0.0"));
+            value = xmlDoc.CreateTextNode("0.0");
             elem.AppendChild(value);
             stats.AppendChild(elem);
 
@@ -125,27 +124,27 @@ namespace Crap4Net.Formatters
             stats.AppendChild(elem);
 
             elem = xmlDoc.CreateElement("methodCount");
-            value = xmlDoc.CreateTextNode(crapStatsEntry.CalculateTotalMethods().ToString());
+            value = xmlDoc.CreateTextNode("0");
             elem.AppendChild(value);
             stats.AppendChild(elem);
 
             elem = xmlDoc.CreateElement("crapMethodCount");
-            value = xmlDoc.CreateTextNode(crapStatsEntry.CalculateTotalCrapMethods().ToString());
+            value = xmlDoc.CreateTextNode("0");
             elem.AppendChild(value);
             stats.AppendChild(elem);
 
             elem = xmlDoc.CreateElement("crapMethodPercent");
-            value = xmlDoc.CreateTextNode(crapStatsEntry.CalculateCrapMethodPercentage().ToString("0.0"));
+            value = xmlDoc.CreateTextNode("0.0");
             elem.AppendChild(value);
             stats.AppendChild(elem);
 
             elem = xmlDoc.CreateElement("crapLoad");
-            value = xmlDoc.CreateTextNode(crapStatsEntry.CalculateTotalCrapLoad().ToString("0"));
+            value = xmlDoc.CreateTextNode("0");
             elem.AppendChild(value);
             stats.AppendChild(elem);
 
             elem = xmlDoc.CreateElement("crapThreshold");
-            value = xmlDoc.CreateTextNode(crapStatsEntry.Threshold.ToString());
+            value = xmlDoc.CreateTextNode("30");
             elem.AppendChild(value);
             stats.AppendChild(elem);
 
@@ -289,7 +288,7 @@ namespace Crap4Net.Formatters
             methodElement.AppendChild(coverage);
 
             var crapLoad = xmlDoc.CreateElement("crapLoad");
-            var crapLoadValue = xmlDoc.CreateTextNode(method.CalculateCrapLoad().ToString("0"));
+            var crapLoadValue = xmlDoc.CreateTextNode("1");
             crapLoad.AppendChild(crapLoadValue);
             methodElement.AppendChild(crapLoad);
 
