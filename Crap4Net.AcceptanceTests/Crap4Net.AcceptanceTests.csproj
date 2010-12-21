@@ -54,6 +54,256 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AcceptanceTests.xml" />
+    <Content Include="AcceptnaceTestData\InfraBuild\ccReport.xml">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\CoverageReport.xml">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\commandexecuter.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\CommandExecuter.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\DMAutoGen.exe">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\DMAutoGen.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\DMDatatest\Indigo.Globals.Descriptors.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\DMDatatest\Indigo.Infra.DataManagement.Schemas.AllInOne.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\DMDatatest\Indigo.iPC.JobStorage.JobProperties.JobPropertiesSchemas.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\DMDatatest\Indigo.IServices.Descriptors.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\DMDatatest\Indigo.Services.Descriptors.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\dummytest.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\DummyTest.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\EMCLI.exe">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\EMCLI.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Globals.Descriptors.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Configuration.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Configuration.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Configuration.Service.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Configuration.Service.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\indigo.infra.configuration.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Configuration.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Configuration_Accessor.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Configuration_Accessor.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.DataManagement.Core.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.DataManagement.Core.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.DataManagement.Schemas.AllInOne.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.DataManagement.SDK.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.DataManagement.SDK.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ElementManager.ElementAdapters.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ElementManager.ElementAdapters.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ElementManager.EMAPI.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ElementManager.EMAPI.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\indigo.infra.elementmanager.emapi.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ElementManager.EMAPI.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ElementManager.EMService.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ElementManager.EMService.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ElementManager.Prerequisites.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ElementManager.Prerequisites.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\indigo.infra.eventbroker.common.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.EventBroker.Common.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.EventBroker.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.EventBroker.EventBrokerService.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.EventBroker.EventBrokerService.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.EventBroker.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\indigo.infra.exception.common.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Exception.Common.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Exceptions.Common.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Exceptions.Common.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ICL.Core.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ICL.Core.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ICL.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ICL.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\indigo.infra.icl.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ICL.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\indigo.infra.integrationtests.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.IntegrationTests.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Logging.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Logging.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\indigo.infra.logging.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Logging.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.LoggingServer.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.LoggingServer.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.ManagedDataInfra.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.ManagedDataInfra.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.MetadataClient.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.MetadataClient.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.MetadataDal.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.MetadataDal.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.MetadataEditor.exe">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.MetadataEditor.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.MetadataService.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.MetadataService.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.MetadataShared.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ManagedData.MetadataShared.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Middleware.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Middleware.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.sdk.Middleware.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.sdk.Middleware.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ServiceBus.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ServiceBus.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\indigo.infra.servicebus.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ServiceBus.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ServiceBus.WCF.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.ServiceBus.WCF.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Services.ServiceBusService.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Services.ServiceBusService.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Unicorn.MW.Broker.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Unicorn.MW.Broker.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Unicorn.SystabWrapper.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Infra.Unicorn.SystabWrapper.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.iPC.JobStorage.JobProperties.JobPropertiesSchemas.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.IServices.Descriptors.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.IServices.KeysTypes.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Indigo.Services.Descriptors.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\infra.datamanagement.autogen.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Infra.DataManagement.AutoGen.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\infra.unicorn.systabwrapper.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Infra.Unicorn.SystabWrapper.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\InJobProcessCreator.exe">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\InJobProcessCreator.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\manageddata.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\ManagedData.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.EnterpriseLibrary.Common.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.EnterpriseLibrary.Validation.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.EnterpriseLibrary.Validation.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.ServiceLocation.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.ServiceLocation.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.Unity.Configuration.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.Unity.Configuration.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.Unity.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.Unity.Interception.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.Unity.Interception.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Microsoft.Practices.Unity.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\mwbroker.unittests.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\MWBroker.UnitTests.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\MWCodeGenerator.exe">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\MWCodeGenerator.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\protobuf-net.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\protobuf-net.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\QuickGraph.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\QuickGraph.Graphviz.dll">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\ServiceHost.exe">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\ServiceHost.instr.pdb">
+    </Content>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\Typemock.ArrangeActAssert.dll">
+    </Content>
     <Content Include="AuthoringTests.txt" />
     <Content Include="ExpectedCrapReport.xml" />
     <Content Include="AcceptnaceTestData\ccmReport.xml">
@@ -93,6 +343,8 @@
     <None Include="AcceptnaceTestData\Crap4Net\data.coverage">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Content Include="AcceptnaceTestData\InfraBuild\OutputDirectory\Out\data.coverage">
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1000]E:\Users\lior\Documents\Visual Studio 2008\Projects\Crap4JS\Crap4Net.UnitTests\Crap.nunit</TopNode>
-  <SelectedNode>[0-1000]E:\Users\lior\Documents\Visual Studio 2008\Projects\Crap4JS\Crap4Net.UnitTests\Crap.nunit</SelectedNode>
+  <TopNode>[0-1000]E:\Users\lior\Documents\Visual Studio 2008\Projects\Crap4Net-Git\crap4net\Crap4Net.UnitTests\Crap.nunit</TopNode>
+  <SelectedNode>[0-1094]Crap4NetTests</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1000]E:\Users\lior\Documents\Visual Studio 2008\Projects\Crap4JS\Crap4Net.UnitTests\Crap.nunit" Expanded="true" />
-    <Node UniqueName="[0-1073]E:\Users\lior\Documents\Visual Studio 2008\Projects\Crap4JS\Crap4Net.UnitTests\bin\Debug\Crap4Net.UnitTests.dll" Expanded="true" />
-    <Node UniqueName="[0-1074]Crap4Net" Expanded="true" />
-    <Node UniqueName="[0-1009]Crap4Net.Entitiestests.CCDataEntryTest" Expanded="true" />
-    <Node UniqueName="[0-1001]Crap4Net.Entitiestests.CoverageDataEntryTest" Expanded="true" />
-    <Node UniqueName="[0-1017]Crap4Net.Entitiestests.CrapDataEntryTest" Expanded="true" />
-    <Node UniqueName="[0-1065]Crap4Net.Entitiestests.MethodSignatureTest" Expanded="true" />
-    <Node UniqueName="[0-1076]Crap4NetTests" Expanded="true" />
+    <Node UniqueName="[0-1000]E:\Users\lior\Documents\Visual Studio 2008\Projects\Crap4Net-Git\crap4net\Crap4Net.UnitTests\Crap.nunit" Expanded="true" />
+    <Node UniqueName="[0-1091]E:\Users\lior\Documents\Visual Studio 2008\Projects\Crap4Net-Git\crap4net\Crap4Net.UnitTests\bin\Debug\Crap4Net.UnitTests.dll" Expanded="true" />
+    <Node UniqueName="[0-1092]Crap4Net" Expanded="true" />
+    <Node UniqueName="[0-1093]Crap4Net.Entitiestests" Expanded="true" />
+    <Node UniqueName="[0-1094]Crap4NetTests" Expanded="true" />
     <Node UniqueName="[0-1028]Crap4NetTests.SignatureParserTest" Expanded="true" />
+    <Node UniqueName="[0-1032]Crap4NetTests.SignatureParserTest.GetClassName_VariousInputs_NameIsParsedCorrectly" Expanded="true" />
+    <Node UniqueName="[0-1029]Crap4NetTests.SignatureParserTest.GetMethodName_VariousInputs_NameIsParsedCorrectly1" Expanded="true" />
   </Nodes>
 </VisualState>

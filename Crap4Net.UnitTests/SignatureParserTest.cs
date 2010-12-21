@@ -34,7 +34,7 @@ namespace Crap4NetTests
             //static ctor
             "dummyProject.Class1..cctor()",
             //static method
-            "dummyProject.Class1.staticMethod() : Void"
+            "dummyProject.Class1.staticMethod() : Void",
         };
         string[] expectedClasses = 
         {
@@ -93,13 +93,31 @@ namespace Crap4NetTests
             //static ctor
             ".cctor",
             //static method
-            "staticMethod"
+            "staticMethod",
         };
+        //anonymous method inside constructor
+        [TestCase("Dal.ExceptionsSqlServerDal.<.ctor>b__0(IMemberConfigurationExpression<Policy>) : Void", "<.ctor>b__0")]
+        [TestCase("Dal.ExceptionsSqlServerDal.<.cctor>b__0(IMemberConfigurationExpression<Policy>) : Void", "<.cctor>b__0")]
+        public void GetMethodName_VariousInputs_NameIsParsedCorrectly1(string input, string expected)
+        {
+            string actual = SignatureParser.GetMethodName(input);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        //anonymous method inside constructor
+        [TestCase("Dal.ExceptionsSqlServerDal.<.ctor>b__0(IMemberConfigurationExpression<Policy>) : Void", "ExceptionsSqlServerDal")]
+        [TestCase("Dal.ExceptionsSqlServerDal.<.cctor>b__0(IMemberConfigurationExpression<Policy>) : Void", "ExceptionsSqlServerDal")]
+        public void GetClassName_VariousInputs_NameIsParsedCorrectly(string input, string expected)
+        {
+            string actual = SignatureParser.GetClassName(input);
+
+            Assert.AreEqual(expected, actual);
+        }
 
         [Test]
-        
         public void GetMethodName_VariousInputs_NameIsParsedCorrectly(
-            [Values(0, 1, 2, 3, 4,5,6,7,8,9,10,11,12,13,14,15,16)] int x)
+            [Values(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)] int x)
         {
             string actual = SignatureParser.GetMethodName(inputs[x]);
 
