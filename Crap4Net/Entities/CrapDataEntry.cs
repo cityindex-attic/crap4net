@@ -38,5 +38,23 @@ namespace Crap4Net
         }
 
         #endregion
+
+        public double CalculateCrapLoad()
+        {
+            double crapLoad = 0;
+            if (Crap >= Constants.CrapThreshold)
+            {
+                crapLoad += CC * (1.0 - CoverageAsPercentage());
+                crapLoad += CC / Constants.CrapThreshold;
+            }
+            return crapLoad;
+        }
+
+        private double CoverageAsPercentage()
+        {
+            var coverageAsPercentage = 1/Convert.ToDouble(Coverage);
+            if (Double.IsPositiveInfinity(coverageAsPercentage)) coverageAsPercentage = 0;
+            return coverageAsPercentage;
+        }
     }
 }

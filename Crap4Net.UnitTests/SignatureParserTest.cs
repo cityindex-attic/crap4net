@@ -122,6 +122,7 @@ namespace Crap4NetTests
             string actual = SignatureParser.GetMethodName(inputs[x]);
 
             Assert.AreEqual(expectedMethods[x], actual);
+
         }
 
         [Test]

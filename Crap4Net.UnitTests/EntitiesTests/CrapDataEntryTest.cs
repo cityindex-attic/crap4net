@@ -12,6 +12,21 @@ namespace Crap4Net.Entitiestests
         const string VALID_METHOD_NAME = "SomeMethod";
 
         [Test]
+        public void CrapLoadCalculatedCorrectly()
+        {
+            CrapDataEntry target1 = new CrapDataEntry("SomeClass", "SomeMethod", 40.51, 27, 9);
+            Assert.AreEqual(9.2666666666666675d, target1.CalculateCrapLoad());
+        }
+
+        [Test]
+        public void CrapLoadCalculatedCorrectlyWhenCoverageIsZero()
+        {
+            CrapDataEntry target1 = new CrapDataEntry("SomeClass", "SomeMethod", 40.51, 0, 9);
+            Assert.AreEqual(9.5999999999999996d, target1.CalculateCrapLoad());
+        }
+
+
+        [Test]
         public void Equals_IdenticalValues_ReturnTrue()
         {
             CrapDataEntry target1 = new CrapDataEntry("SomeClass", "SomeMethod", 1.54, 0, 0);
