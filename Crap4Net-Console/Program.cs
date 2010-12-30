@@ -10,25 +10,32 @@ namespace Crap4Net_Console
 
         static void Main(string[] args)
         {
-            
-            var CoverageTool = ConfigurationManager.AppSettings["CoverageTool"];
-            var CCTool = ConfigurationManager.AppSettings["CCTool"];
-            var coverageFile = ConfigurationManager.AppSettings["CoverageReport"];
-            var ccFile = ConfigurationManager.AppSettings["CCReport"];
-            var outputFile = ConfigurationManager.AppSettings["OutputFile"];
-            var formatterName = ConfigurationManager.AppSettings["FormatterType"];
 
-            var CCParser = CreateCCParser(CCTool);
-            var coverageParser = CreateCoverageParser(CoverageTool);
+            try
+            {
+                var CoverageTool = ConfigurationManager.AppSettings["CoverageTool"];
+                var CCTool = ConfigurationManager.AppSettings["CCTool"];
+                var coverageFile = ConfigurationManager.AppSettings["CoverageReport"];
+                var ccFile = ConfigurationManager.AppSettings["CCReport"];
+                var outputFile = ConfigurationManager.AppSettings["OutputFile"];
+                var formatterName = ConfigurationManager.AppSettings["FormatterType"];
 
-            CrapAnalyzer.CCParser = CCParser;
-            CrapAnalyzer.CoverageParser = coverageParser;
+                var CCParser = CreateCCParser(CCTool);
+                var coverageParser = CreateCoverageParser(CoverageTool);
+
+                CrapAnalyzer.CCParser = CCParser;
+                CrapAnalyzer.CoverageParser = coverageParser;
 
 
-            //create parsers
-            var Results = CrapAnalyzer.CreateCrapReport(coverageFile, ccFile);
-            IFormatter formatter = FormatterFactory.GetFormatter(formatterName);
-            formatter.FormatAndSaveToFile(Results, outputFile);
+                //create parsers
+                var Results = CrapAnalyzer.CreateCrapReport(coverageFile, ccFile);
+                IFormatter formatter = FormatterFactory.GetFormatter(formatterName);
+                formatter.FormatAndSaveToFile(Results, outputFile);
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(string.Format("An exception occured whilst creating the CRAP report.  Details:\n{0}", exception));
+            }
             
 
         }
