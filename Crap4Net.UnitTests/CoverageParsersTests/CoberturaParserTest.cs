@@ -8,7 +8,7 @@ namespace Crap4NetTests
     [TestFixture]
     public class CoberturaParserTest
     {
-        private const string PARTCOVER_FILEPATH = @"UnitTestData\PartCoverFiles\";
+        private const string COBERTURA_FILEPATH = @"UnitTestData\CoberturaFiles\";
 
         CoberturaParser _target;
 
@@ -35,21 +35,39 @@ namespace Crap4NetTests
         }
 
         [Test]
+        public void LoadData_CtorMethod_ParseCtor()
+        {
+            _target.LoadData(COBERTURA_FILEPATH + "ctor.xml");
+            var actual = _target.Data;
+            Assert.IsTrue(actual.Contains(new CoverageDataEntry("Simple", "<init>", 100)));
+        }
+
+        [Test]
+        public void LoadData_StaticCtor_ParsedCorrectly()
+        {
+            _target.LoadData(COBERTURA_FILEPATH + "StaticCtor.xml");
+            var actual = _target.Data;
+
+            Assert.IsTrue(actual.Contains(new CoverageDataEntry("Simple", "<clinit>", 100)));
+        }
+
+        [Test]
+        public void LoadData_PartialCoverage_CalculateCorrectCoverage()
+        {
+            _target.LoadData(COBERTURA_FILEPATH + "PartialCoverage.xml");
+
+            var actual = _target.Data;
+            Assert.IsTrue(actual.Contains(new CoverageDataEntry("Simple", "f", 80)));
+        }
+
+
+        [Test]
         [Ignore]
         public void LoadData_EmptyClass_ParseOnlyCtor()
         {
             //Empty Classes are just not there
             //nothing to test...
         }
-
-        [Test]
-        [Ignore]
-        public void LoadData_CtorMethod_ParseCtor()
-        {
-            var actual = _target.Data;
-            Assert.IsTrue(actual.Contains(new CoverageDataEntry("Class1", ".ctor", 100)));
-        }
-
         [Test]
         [Ignore]
         public void LoadData_GenericMethod_ParsedCorrectly()
@@ -75,13 +93,6 @@ namespace Crap4NetTests
             Assert.IsTrue(actual.Contains(new CoverageDataEntry("Class1", "staticMethod", 0)));
         }
 
-        [Test]
-        [Ignore]
-        public void LoadData_PartialCoverage_CalculateCorrectCoverage()
-        {
-            var actual = _target.Data;
-            Assert.IsTrue(actual.Contains(new CoverageDataEntry("Class1", "method1", 66)));
-        }
 
         [Test]
         [Ignore]
@@ -93,14 +104,6 @@ namespace Crap4NetTests
             Assert.IsTrue(actual.Contains(new CoverageDataEntry("Class1", "set_SomeProperty", 0)));
         }
 
-        [Test]
-        [Ignore]
-        public void LoadData_StaticCtor_ParsedCorrectly()
-        {
-            var actual = _target.Data;
-
-            Assert.IsTrue(actual.Contains(new CoverageDataEntry("Class1", ".cctor", 100)));
-        }
 
         [Test]
         [Ignore()] //not yet anyway
