@@ -33,7 +33,10 @@ namespace Crap4Net.Entities
 
         public double CalculateCrapMethodPercentage()
         {
-            return Convert.ToDouble(CalculateTotalCrapMethods()) / Convert.ToDouble(CalculateTotalMethods())*100;
+            var numberOfMethods = Convert.ToDouble(CalculateTotalMethods());
+            if (numberOfMethods>0)
+                return Convert.ToDouble(CalculateTotalCrapMethods()) / numberOfMethods * 100;
+            return 0d;
         }
 
         public double CalculateTotalCrapLoad()

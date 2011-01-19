@@ -36,12 +36,21 @@ namespace Crap4Net.UnitTests.EntitiesTests
             var crapSummary = new CrapStatsEntry(_crapMethodData, 2);
             Assert.AreEqual(2, crapSummary.CalculateTotalCrapMethods());
         }
+
         [Test]
         public void CrapMethodPercentIsCalculatedAsTheNumCrapMethodsOverNumMethods()
         {
             var crapSummary = new CrapStatsEntry(_crapMethodData, 2);
             Assert.AreEqual(66.666666666666657d, crapSummary.CalculateCrapMethodPercentage());
         }
+
+        [Test]
+        public void CrapMethodPercentIs0WhenThereIsNoCrapMethodData()
+        {
+            var crapSummary = new CrapStatsEntry(new List<CrapDataEntry>(), 2);
+            Assert.AreEqual(0d, crapSummary.CalculateCrapMethodPercentage());
+        }
+
 
         [Test]
         public void TotalCrapLoadIsCalculatedAsTheSumOfCrapLoadForEachMethod()
